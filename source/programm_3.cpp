@@ -1,4 +1,3 @@
-#include <iostream>
 
 #include "triangle.h"
 #include "triangle_isosceles.h"
@@ -9,10 +8,13 @@
 #include "square.h"
 #include "parallelogram.h"
 #include "rhomb.h"
+#include <iostream>
+#include <clocale>
 
 int main(int argc, char * argv [])
 {
-    
+    setlocale(LC_ALL, "Russian");
+
     Triangle triangle(10.0, 20.0, 30.0, 50.0, 60.0, 70.0);
     Triangle_Isosceles triangle_isosceles(10.0, 20.0, 50.0, 60.0);
     Triangle_Right_Angled triangle_right_angled(10.0, 20.0, 50.0, 60.0);

@@ -1,5 +1,6 @@
 #include "mathematic.h"
 #include <iostream>
+#include <clocale>
 
 enum operation_t
 {
@@ -12,6 +13,8 @@ enum operation_t
 
 int main(int argc, char * argv [])
 {
+    setlocale(LC_ALL, "Russian");
+    
     int32_t value_1{};
     int32_t value_2{};
     uint16_t operation{};
