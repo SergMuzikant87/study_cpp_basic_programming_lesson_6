@@ -1,0 +1,19 @@
+#pragma once
+
+#include "parallelogram.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+    Класс "Ромб"
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class Rhomb : public Parallelogram
+{
+    public:
+        Rhomb(void);
+        Rhomb(float a, float A);
+        Rhomb(const Rhomb & figure_copyed);
+        Rhomb & operator= (const Rhomb & figure_copyed);
+
+        bool is_correct(void) const override;
+};

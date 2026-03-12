@@ -1,0 +1,19 @@
+#pragma once
+
+#include "rectangle.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+    Класс "Квадрат"
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class Square : public Rectangle
+{
+    public:
+        Square(void);
+        Square(float a);
+        Square(const Square & figure_copyed);
+        Square & operator= (const Square & figure_copyed);
+
+        bool is_correct(void) const override;
+};
